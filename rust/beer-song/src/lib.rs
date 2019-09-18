@@ -10,8 +10,7 @@ pub fn verse(n: i32) -> String {
 pub fn sing(start: i32, end: i32) -> String {
     let mut verses = vec![];
     for i in (end..=start).rev() {
-        if i != end { verses.push(format!("{}\n", verse(i))); }
-        else { verses.push(verse(i)); }
+        verses.push(verse(i));
     }
-    verses.concat()
+    verses.join("\n")
 }
