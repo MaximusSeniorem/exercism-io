@@ -1,11 +1,13 @@
 
 pub fn build_proverb(list: &[&str]) -> String {
-    if list.len() == 0 { return String::new(); }
+    if list.is_empty() { return String::new(); }
 
-    let mut verses = vec![];
-    for i in 0..list.len()-1 {
-        verses.push(format!("For want of a {} the {} was lost.", list[i], list[i+1]));
-    }
-    verses.push(format!("And all for the want of a {}.", list[0]));
-    verses.join("\n")
+    let mut proverb : String = list
+        .iter()
+        .zip(list.iter().skip(1))
+        .map(|(want, lost)| format!("For want of a {} the {} was lost.\n", want, lost))
+        .collect();
+
+    proverb.push_str(&format!("And all for the want of a {}.", list[0]));
+    proverb
 }
