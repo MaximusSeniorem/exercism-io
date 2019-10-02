@@ -1,5 +1,7 @@
-fn list_digit(n : u32) -> Vec<u32> {
-    if n == 0 { return vec![0]; }
+fn list_digit(n: u32) -> Vec<u32> {
+    if n == 0 {
+        return vec![0];
+    }
     let mut x = n;
 
     std::iter::from_fn(move || {
@@ -10,7 +12,8 @@ fn list_digit(n : u32) -> Vec<u32> {
             x /= 10;
             Some(current)
         }
-    }).collect::<Vec<u32>>()
+    })
+    .collect::<Vec<u32>>()
 }
 
 pub fn is_armstrong_number(num: u32) -> bool {
