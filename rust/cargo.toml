@@ -1,0 +1,16 @@
+#is this really usefull q::
+[workspace]
+
+members = [
+    "01-hello-world",
+    "02-reverse-string",
+
+    "b01.1-leap",
+    "b01.2-raindrops",
+    "b01.3-nth-prime",
+    "b01.4-beer-song",
+    "b01.5-proverb",
+    "b01.6-difference-of-squares",
+    "b01.7-sum-of-multiples"
+    "grains"
+]
