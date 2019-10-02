@@ -12,5 +12,5 @@ members = [
     "b01.5-proverb",
     "b01.6-difference-of-squares",
     "b01.7-sum-of-multiples",
-    "grains"
+    "b01.8-grains"
 ]
