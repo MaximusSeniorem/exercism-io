@@ -13,5 +13,6 @@ members = [
     "b01.6-difference-of-squares",
     "b01.7-sum-of-multiples",
     "b01.8-grains",
-    "b01.9-prime-factors"
+    "b01.9-prime-factors",
+    "armstrong-numbers"
 ]
