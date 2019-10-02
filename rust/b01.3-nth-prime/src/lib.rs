@@ -1,4 +1,4 @@
-fn is_prime(n: &u32, primes : &Vec<u32>) -> bool{
+fn is_prime(n: &u32, primes: &Vec<u32>) -> bool {
     let mut is_prime = true;
     let sqrt_n = (*n as f64).sqrt();
 
