@@ -18,6 +18,7 @@ fn list_digit(n: u32) -> Vec<u32> {
 
 pub fn is_armstrong_number(num: u32) -> bool {
     let list = list_digit(num);
+    println!("{}", num);
     let pow = list.len() as u32;
 
     num == list.iter().map(|x| x.pow(pow)).sum()
